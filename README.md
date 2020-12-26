@@ -1,3 +1,10 @@
+Clone linkedin
+2020-12-26
+
+### Using redux, react, firebase+auth, material-UI
+
+firebase link : https://console.firebase.google.com/u/0/project/linkedin-clone-react-2000c/firestore/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
