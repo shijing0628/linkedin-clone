@@ -1,6 +1,12 @@
 Clone linkedin
 2020-12-26
 
+# Website of this app : https://linkedin-clone-react-2000c.web.app/
+
+![](2020-12-26-22-17-26.png)
+
+![](2020-12-26-22-18-02.png)
+
 ### Using redux(share user login info to different component), react, firebase(auth), material-UI
 
 firebase link : https://console.firebase.google.com/u/0/project/linkedin-clone-react-2000c/firestore/
