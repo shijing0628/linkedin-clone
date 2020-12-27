@@ -1,7 +1,7 @@
 Clone linkedin
 2020-12-26
 
-### Using redux, react, firebase+auth, material-UI
+### Using redux(share user login info to different component), react, firebase(auth), material-UI
 
 firebase link : https://console.firebase.google.com/u/0/project/linkedin-clone-react-2000c/firestore/
 

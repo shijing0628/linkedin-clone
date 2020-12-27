@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import "./Post.css"
 import { Avatar } from '@material-ui/core'
 import InputOption from '../InputOption/InputOption';
@@ -7,9 +7,10 @@ import CommentIcon from '@material-ui/icons/Comment';
 import ShareIcon from '@material-ui/icons/Share';
 import SendIcon from '@material-ui/icons/Send';
 
-function Post({ name, description, message, photoUrl }) {
+// forwardRef + Feed.js flipmove = animation, this forwardRef + ref={refs} target the object
+const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
  return (
-  <div className="post">
+  <div ref={ref} className="post">
    <div className="post__header">
     <Avatar src={photoUrl}>
      {name[0]}
@@ -33,5 +34,5 @@ function Post({ name, description, message, photoUrl }) {
   </div>
  )
 }
-
+)
 export default Post
