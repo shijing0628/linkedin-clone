@@ -33,6 +33,7 @@
   color: #fff;
   background-color: #0074b1;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .login > p {
@@ -40,6 +41,7 @@
 }
 .login > p > span {
   color: #0074b1;
+  cursor: pointer;
 }
 .login > p > span:hover {
   color: blue;

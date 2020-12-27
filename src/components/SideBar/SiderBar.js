@@ -1,8 +1,12 @@
 import React from 'react'
 import './SideBar.css'
 import { Avatar } from '@material-ui/core'
+import { useSelector } from 'react-redux'
+import { selectUser } from '../../features/userSlice'
+
 
 function SideBar() {
+ const user = useSelector(selectUser)
 
  const recentItem = topic => (
   <div className="sidebar__recentItem">
@@ -15,9 +19,11 @@ function SideBar() {
   <div className="sidebar">
    <div className="sidebar__top">
     <img src="https://images.unsplash.com/photo-1508717272800-9fff97da7e8f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGJhY2tncm91bmR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-    <Avatar className="sidebar__avatar" />
-    <h2>Brenda Liu</h2>
-    <h4>brenda@gmail.com</h4>
+    <Avatar className="sidebar__avatar" src={user.profileUrl}>
+     {user.email[0]}
+    </Avatar>
+    <h2>{user.displayName}</h2>
+    <h4>{user.email}</h4>
    </div>
 
    <div className="sidebar__stats">

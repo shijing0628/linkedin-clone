@@ -14,6 +14,7 @@ import { useDispatch } from 'react-redux'
 function App() {
   const user = useSelector(selectUser)
   const dispatch = useDispatch()
+
   useEffect(() => {
     auth.onAuthStateChanged(userAuth => {
       if (userAuth) {
@@ -22,14 +23,14 @@ function App() {
           email: userAuth.email,
           uid: userAuth.uid,
           displayName: userAuth.displayName,
-          photoURL: userAuth.photoURL
+          profileUrl: userAuth.photoURL
         }))
       } else {
         //user logout
         dispatch(logout())
       }
     })
-  })
+  }, [])
 
   return (
     <div className="app">
